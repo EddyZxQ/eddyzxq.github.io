@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="CSS/paginaMain.css">
     <link rel="icon" href="/#">
+
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <title>edgar</title>
 </head>
 <body>
@@ -25,9 +27,10 @@
                <div id="desplegable">
                    <div id="objetosMenu">
                        <ul>
+                           <li><a href="#cajonSobreMi">SOBRE MI</a></li>
                            <li><a href="#proyectos">PROYECTOS</a></li>
                            <li><a href="#habilidades">HABILIDADES</a></li>
-                           <li><a href="#trabajos">TRABAJOS(WORKING...)</a></li>
+                           <li><a href="#trabajos">(WORKING...)</a></li>
                            <li><a href="#contacto">CONTACTAME</a></li>
                        </ul>
                    </div>
@@ -40,12 +43,20 @@
             <div id="presentacion">
 
                 <img src="images/portatil.gif" alt="portatil codigo maquina" id="portatilgif">
+
                 <svg id="paleta">
-                    <circle cx="160" cy="220" r="120" fill="#9275FA" id="circulo"/>
-                    <circle cx="400" cy="320" r="60" fill="#F2B7AC" id="circulo"/>
+
+                    <g transform="translate(180 220.025)" id="contenedorBlob"><path  d="M88.9 -105.9C113.5 -85.3 130.6 -55.7 136.2 -24C141.8 7.6 135.8 41.3 119.8 69.2C103.7 97 77.5 119 47.3 130C17.1 141 -17.1 141 -47.3 130C-77.5 119 -103.7 97 -119.8 69.2C-135.8 41.3 -141.8 7.6 -136.2 -24C-130.6 -55.7 -113.5 -85.3 -88.9 -105.9C-64.3 -126.6 -32.1 -138.3 0 -138.3C32.1 -138.3 64.3 -126.6 88.9 -105.9" fill="#FF0066"></path></g>
+                    <g transform="translate(180 220.025)"><path id="blob1b" d="M65.5 -60.6C89 -42 115 -21 119.2 4.2C123.5 29.5 105.9 58.9 82.4 72.8C58.9 86.6 29.5 84.8 5.9 78.9C-17.7 73 -35.4 63 -54.2 49.2C-73 35.4 -93 17.7 -101.9 -8.8C-110.7 -35.4 -108.4 -70.7 -89.5 -89.4C-70.7 -108 -35.4 -110 -7.2 -102.8C21 -95.6 42 -79.3 65.5 -60.6" fill="#BB004B" ></path></g>
+                    <g transform="translate(448.71122877267277 300.0267999663989)" style="visibility: hidden"><path id="blob2b" d="M64.5 -83.3C88.3 -71.5 115.5 -58.9 120 -40.1C124.6 -21.3 106.5 3.7 97.3 31.5C88.2 59.3 87.9 89.9 73.1 100.8C58.4 111.6 29.2 102.7 3 98.5C-23.1 94.3 -46.2 94.9 -62.6 84.6C-78.9 74.3 -88.4 53 -99.4 29.8C-110.3 6.6 -122.7 -18.6 -116.5 -38C-110.4 -57.3 -85.8 -70.7 -63.3 -82.9C-40.8 -95.1 -20.4 -106 0 -106C20.4 -106 40.8 -95.1 64.5 -83.3" fill="#BB004B"></path></g>
+
+                    <circle cx="400" cy="320" r="60" fill="#FF6F61" class="circulo"/>
                 </svg>
 
-                <h1>Hola soy Edgar</h1>
+
+
+
+                <h1 id="infoNombre">Hola soy Edgar</h1>
                 <p>programador, informatico y estudiante &#128187 &#9749 </p>
             </div>
 
@@ -56,14 +67,26 @@
                 </div>
             </div>
 
-
         </section>
+
         <div id="cajaOlas">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="contenedorolas"><path id="olas" fill="#ffffff" fill-opacity="1" d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,138.7C672,160,768,160,864,170.7C960,181,1056,203,1152,202.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
         </div>
 
-
         <section id="estadisticas">
+
+            <div id="flecha" class="arrow eliminar"></div>
+
+            <div id="cajonSobreMi">
+                <div id="sobreMi">
+                    <div id="imgContenedor"><img src="images/fotoSobreMi.png" alt="Edgar Lopez Calomarde"></div>
+
+                    <div id="columnDescripcion">
+                        <h1>Sobre mi</h1>
+                        <p>En la actualidad estoy terminando un grado superior de informática, concretamente la modalidad DAM (Desarrollo de Aplicaciones Multiplataforma). Y a la vez intento estudiar también el apartado orientado a WEB ya que en este ciclo no va tan enfocado a este tema. En cuanto a los aspectos generales que puedo destacar sobre mi, soy una persona dinámica, ambiciosa, autodidacta que intenta desarrollarse ante cualquier situación.</p>
+                    </div>
+                </div>
+            </div>
 
             <div id="cajonproyectos">
                 <h1 class="titulo">PROYECTOS</h1>
@@ -221,5 +244,8 @@
     <script src="JS/btnDespliegue.js"></script>
     <script src="JS/modoOscuro.js"></script>
     <script src ="JS/redireccionar.js"></script>
+    <script src="JS/scrollDesaparecer.js"></script>
+    <script src="JS/kuteApi.js"></script>
+
 </body>
 </html>

@@ -1,5 +1,6 @@
+document.addEventListener('DOMContentLoaded', function() {
 
-let btnDesplegar = document.getElementById("btnToggle");
+    let btnDesplegar = document.getElementById("btnToggle");
 let caja = document.getElementById("desplegable");
 
 
@@ -11,4 +12,4 @@ btnDesplegar.classList.toggle('active');
 
 }
 
-
+})
