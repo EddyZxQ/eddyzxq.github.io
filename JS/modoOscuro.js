@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let objetosmenu = document.getElementById("objetosMenu");
     let emailContacto = document.getElementById("emailContacto");
     let sobreMi = document.getElementById("sobreMi");
+    let tituloCuerpo = document.getElementById("objetoxCuerpo");
+    let tituloMenu = document.getElementById("objetoxTitulo");
+
+
+
 
     btnLuna.onclick = function () {
         btnLuna.classList.toggle("luna");
@@ -34,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
         objetosmenu.classList.toggle("oscuro");
         emailContacto.classList.toggle("oscuro");
         sobreMi.classList.toggle("oscuro");
-
-
+        tituloMenu.classList.toggle("oscuro");
+        tituloCuerpo.classList.toggle("oscuro");
     }
 
 })
