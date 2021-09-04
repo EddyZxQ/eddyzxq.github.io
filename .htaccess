@@ -1,6 +1,0 @@
-RewriteEngine on
-
-RewriteCond %{HTTP_HOST} ^www.eddyzxq.github.io [NC]
-RewriteRule ^(.*)$ https://eddyzxq.github.io/ [L,R=301,NC]
-
-www to non www redirect
