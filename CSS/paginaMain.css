@@ -335,6 +335,7 @@ header{
 }
 
 
+
 #cajaOlas{
     background: linear-gradient(180deg, rgb(52, 187, 243) 0%, rgb(255, 255, 255) 100%);
 }
@@ -424,9 +425,6 @@ header{
 
 
 }
-
-
-
 
 
 /*SCROLL RATON*/
@@ -697,6 +695,11 @@ padding: 20px;
     to {height: 200px;}
 }
 
+@keyframes desplegarMenuMovil {
+    from{height: 10px;}
+    to{height: 164px;}
+}
+
 @keyframes plegar  {
     from {height: 200px;}
     to {height: 10px;}
@@ -851,13 +854,18 @@ padding: 20px;
     }
 
     .boton_menu{
-        left: 38%;
+        left: 42%;
     }
 
 }
 
 
 @media screen and (max-width: 610px) {
+
+    .boton_menu{
+        left: 40%;
+    }
+
 
     #hotelSoler, #clinicaVeterinaria, #otras, #backend, #frontend{
         margin: 10px auto;
